@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        box-sizing: border-box
+    }
+
+    body {
+        font-family: Verdana, sans-serif;
+        margin: 0
+    }
+
+    .mySlides {
+        display: none
+    }
+
+    img {
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    .slideshow-container {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+    }
+
+
+    /* Caption text */
+    .text {
+        color: #ffffff;
+        font-size: 60px;
+        font-family: 'Noto Sans', sans-serif;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 40%;
+        width: 540px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    }
+
+</style>
+
+<body>
+    <header>
+        <div class="loga">
+            <img>
+        </div>
+    </header>
+    <nav>
+        <div class="topnav" id="myTopnav">
+
+            <a href="#home" class="active">Home</a>
+            <a href="work.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/a.jpg">
+                    <div class="text">Graphic Design</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/b.jpg">
+                    <div class="text">Video Editing</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/c.jpg">
+                    <div class="text">Motion Graphics</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/d.jpg">
+                    <div class="text">Art Works</div>
+                </div>
+            </div>
+        </section>
+        <section class="ring">
+            <table>
+                <tr>
+                    <td class="acmpnt">
+                        <div class="o">
+                            <img src="images/special/Service.jpg" alt="" />
+                        </div>
+                    </td>
+                    <td class="acmpnt">
+                        <div class="o">
+                            <img src="images/special/holiday.jpg" alt="" />
+                        </div>
+                    </td>
+                    <td class="acmpnt">
+                        <div class="o">
+                            <img src="images/special/mask.jpg" alt="" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <!--------------------------------------------------------------------------------------------->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+    </script>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+    </script>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-newsletter">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h4>Join Our Newsletter</h4>
+                        <p>Type your email address in the box below and hit subscribe for our news letter</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <table>
+                        <tr class="col-lg-3 col-md-6 footer-contact">
+                            <td>
+
+                                <h3>DALEFOLIO</h3><br>
+                                <p>
+                                    6614 Woodside Ave <br>
+                                    Woodside, NY 11377<br>
+                                    United States <br><br>
+                                    <strong>Phone:</strong> +1 718 313 8543<br>
+                                    <strong>Email:</strong> dale.lama@outlook.com<br>
+                                </p>
+                            </td>
+                            <td class="col-lg-3 col-md-6 footer-links">
+                                <h4>Useful Links</h4>
+                                <ul class="lnk">
+                                    <li><a href="work.html">Work</a></li>
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </td>
+                            <td class="col-lg-3 col-md-6 footer-links">
+                                <h4>Our Services</h4>
+                                <ul class="srvs">
+                                    <li>Graphic Design</li>
+                                    <li>Video Editing</li>
+                                    <li>Motion Graphics</li>
+                                    <li>Web Design</li>
+                                </ul>
+                            </td>
+                            <td class="col-lg-3 col-md-6 footer-links">
+                                <h4>Our Social Networks</h4>
+                                <p>You can follow us on for designs through one of the below social media apps</p><br>
+                                <div class="social-links mt-3">
+                                    <a href="https://www.facebook.com/"><img src="SocialIcons/facebook.png"></a>
+                                    <a href="https://www.twitter.com/"><img src="SocialIcons/twitter.png"></a>
+                                    <a href="https://www.instagram.com/"><img src="SocialIcons/instagra,.png"></a>
+                                    <a href="https://www.linkedin.com/"><img src="SocialIcons/linkedIn.png"></a>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                <span>Dalefolio</span> &copy; Copyright 2021 <strong></strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+</body>
+
+</html>
