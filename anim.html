@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+</head>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+<style>
+    * {
+        box-sizing: border-box
+    }
+
+    body {
+        font-family: Verdana, sans-serif;
+        margin: 0
+    }
+
+</style>
+
+<body>
+    <header>
+        <div class="loga">
+            <img>
+        </div>
+    </header>
+    <nav>
+        <div class="topnav" id="myTopnav">
+
+            <a href="index.html" class="active">Home</a>
+            <a href="work.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+    </nav>
+    <main style="background-image:url(pages/anim%20page.jpg)">
+        <br><br><br><br><br><br><br><br><br>
+        <table class="ani">
+            <tr>
+                <td><img src="images/Animation/Wall-clock.gif"></td>
+                <td><img src="images/Animation/Hammer.gif"></td>
+            </tr>
+            <tr>
+                <td><img src="images/Animation/UFO.gif"></td>
+                <td><img src="images/Animation/Steelball.gif"></td>
+            </tr>
+            <tr>
+                <td><img src="images/Animation/Water-mill.gif"></td>
+                <td><img src="images/Animation/Rolling-balls.gif"></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+
+    </main>
+    <!--------------------------------------------------------------------------------------------->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+    </script>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-newsletter">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h4>Join Our Newsletter</h4>
+                        <p>Type your email address in the box below and hit subscribe for our news letter</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <table>
+                        <tr class="col-lg-3 col-md-6 footer-contact">
+                            <td>
+
+                                <h3>DALEFOLIO</h3><br>
+                                <p>
+                                    6614 Woodside Ave <br>
+                                    Woodside, NY 11377<br>
+                                    United States <br><br>
+                                    <strong>Phone:</strong> +1 718 313 8543<br>
+                                    <strong>Email:</strong> dale.lama@outlook.com<br>
+                                </p>
+                            </td>
+                            <td class="col-lg-3 col-md-6 footer-links">
+                                <h4>Useful Links</h4>
+                                <ul class="lnk">
+                                    <li><a href="work.html">Work</a></li>
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </td>
+                            <td class="col-lg-3 col-md-6 footer-links">
+                                <h4>Our Services</h4>
+                                <ul class="srvs">
+                                    <li>Graphic Design</li>
+                                    <li>Video Editing</li>
+                                    <li>Motion Graphics</li>
+                                    <li>Web Design</li>
+                                </ul>
+                            </td>
+                            <td class="col-lg-3 col-md-6 footer-links">
+                                <h4>Our Social Networks</h4>
+                                <p>You can follow us on for designs through one of the below social media apps</p><br>
+                                <div class="social-links mt-3">
+                                    <a href="https://www.facebook.com/"><img src="SocialIcons/facebook.png"></a>
+                                    <a href="https://www.twitter.com/"><img src="SocialIcons/twitter.png"></a>
+                                    <a href="https://www.instagram.com/"><img src="SocialIcons/instagra,.png"></a>
+                                    <a href="https://www.linkedin.com/"><img src="SocialIcons/linkedIn.png"></a>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                <span>Dalefolio</span> &copy; Copyright 2021 <strong></strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+</body>
+
+</html>
