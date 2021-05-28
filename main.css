@@ -1,6 +1,6 @@
  body {
      font-family: Verdana, sans-serif;
-     background-color:rgba(105, 105, 105, 0.21);
+     background-color: rgba(105, 105, 105, 0.21);
      max-width: 100%;
      padding: 0 20% 0;
  }
@@ -133,7 +133,7 @@
  }
 
  .wotbl {
-     padding: 20% 40px 70px;
+     padding: 20% 40px 50px;
      position: relative;
  }
 
@@ -150,38 +150,15 @@
 
  .vidFrm {
      padding-top: 20%;
-     max-width: 500px;
+     width: 86%;
      margin: auto;
  }
 
- .vidFrm,
- td {
-     padding: 12px;
- }
-
- .vidFrm,
- tr {
-     padding: 12px;
- }
-
- .ani {
+ .anim {
      padding-top: 20%;
      margin: auto;
-     width: 60%;
-     background-color: black;
+     width: 86%;    
  }
-
- .ani,
- td {
-     padding: 12px;
- }
-
- .map {
-     position: absolute;
-     padding-left: 50%;
-     padding-bottom: 50%;
- }
-
  .acmpnt {
      padding: 46px;
  }
@@ -199,9 +176,10 @@
  }
 
  /*-----------------------------------------------------------*/
-.ring{
-    background-color: beige;
-}
+ .ring {
+     background-color: #f2f2df;
+ }
+
  /*---------------------------------------------------------------*/
 
 
